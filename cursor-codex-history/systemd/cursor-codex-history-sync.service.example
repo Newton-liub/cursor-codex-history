@@ -1,0 +1,17 @@
+[Unit]
+Description=Cursor Codex History Sync Daemon
+After=default.target
+
+[Service]
+Type=simple
+# Replace these paths before use:
+ExecStart=/usr/bin/node /ABS/PATH/TO/cursor-codex-history/scripts/sync-daemon.js --full-scan-minutes 10 --debounce-ms 2000
+WorkingDirectory=/ABS/PATH/TO/cursor-codex-history
+Restart=always
+RestartSec=5
+Environment=CODEX_HOME=%h/.codex
+Environment=CURSOR_HOME=%h/.cursor
+Environment=CURSOR_CODEX_HISTORY_HOME=%h/.cursor-codex-history
+
+[Install]
+WantedBy=default.target

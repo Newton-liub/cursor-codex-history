@@ -1,0 +1,19 @@
+{
+  "name": "cursor-codex-history",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backup, index, export, archive, recover, and delete Codex history for Cursor without mutating internal Cursor DB.",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "history": "node scripts/history-cli.js",
+    "sync": "node scripts/sync-daemon.js",
+    "install:local": "bash scripts/install.sh --without-service",
+    "install:service": "bash scripts/install.sh --with-service",
+    "uninstall:local": "bash scripts/uninstall.sh",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,16 @@
+NOTICE
+
+This project (`cursor-codex-history`) was created with AI assistance and human review.
+
+Reference and inspiration sources:
+
+1. Linux.do discussion topic:
+   https://linux.do/t/topic/1588536
+
+2. Sworddust/codex-history (GitHub):
+   https://github.com/Sworddust/codex-history
+
+Notes:
+- This repository is an independent implementation.
+- References above were used for feature ideas and workflow inspiration.
+- If any direct reuse from third-party content is identified later, this NOTICE and attributions should be updated accordingly.
